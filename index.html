@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio práctico de HTML y estilos CSS.">
+  <title>Mi página de práctica</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="main-nav" aria-label="Navegación principal">
+
+    </nav>
+    <div class="hero">
+      <h1>Titulo</h1>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <article class="panel intro-panel" id="contenido">
+      <h2>Subtitulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor omnis quia nostrum cum deleniti consectetur nisi
+        corrupti labore sed quaerat! Culpa vero, dolore illum repellendus minus sit temporibus alias eveniet.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia vero quis odit incidunt voluptatem provident laudantium
+        et aut facilis consequatur nesciunt saepe non excepturi, hic porro. Repellat accusantium animi illo?
+      </p>
+      <img class="teseracto-image" src="img/tesseract.jpg" alt="La cuarta dimensión,ejemplo de Interstellar ">
+    </article>
+
+    <section class="panel form-panel" id="formulario" aria-labelledby="form-title">
+      <h2 id="form-title">Titulo Formulario</h2>
+      <form id="contact-form">
+        <div class="form-field">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Nombre completo" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="correo">Correo:</label>
+          <input id="correo" name="correo" type="email" placeholder="correo@mail.com" autocomplete="email" required>
+        </div>
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">aceptar</button>
+          <button class="button button-muted" type="reset">cancelar</button>
+        </div>
+        <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="table-panel" id="registros" aria-label="Lista de personas registradas">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Nombres:</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody id="people-list">
+          <tr>
+            <td>Juan Moreno</td>
+            <td>alias@mail.com</td>
+          </tr>
+          <tr>
+            <td>Juanito Alimaña</td>
+            <td>Alimaña@mail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
